@@ -1,0 +1,44 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #ffc245; */
+  background-color: #fff;
+  position: relative;
+}
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  z-index: 2;
+}
+.ellipse {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  z-index: 2;
+}
+.done {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.done img {
+  width: 150px;
+  height: 150px;
+}
+.done-div {
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+}
+.meg-div {
+  position: absolute;
+  top: 67%;
+  left: 56%;
+  transform: translate(-67%, -56%);
+}
+.meg-div p {
+  font-size: 22px;
+  font-weight: bold;
+}

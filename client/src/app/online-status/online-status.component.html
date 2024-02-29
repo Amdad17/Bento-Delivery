@@ -1,0 +1,23 @@
+<div class="body">
+  <div class="profile-info-div">
+    <img src="{{ riderInfo.rider.riderImage }}" alt="" />
+    <p>{{ riderInfo.rider.name }}</p>
+  </div>
+  <div>
+    <div class="input-div">
+      <p>Online</p>
+      <input
+        type="checkbox"
+        name="checkbox"
+        id="toggle"
+        [checked]="riderInfo.rider.onlineStatus"
+      />
+      <label for="toggle" class="switch"></label>
+    </div>
+    <div class="img-div">
+      <div class="line-div"></div>
+      <img [src]="getVehicleImageSrc(riderInfo.rider.vehicleType)" alt="" />
+      <p>{{ riderInfo.rider.vehicleType }}</p>
+    </div>
+  </div>
+</div>

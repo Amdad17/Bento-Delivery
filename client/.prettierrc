@@ -1,0 +1,10 @@
+{
+  "extends": ["@angular/eslint/prettier"],
+  "rules": {
+    "semi": [2, "always"],
+    "quote-props": [2, "consistent"],
+    "trailingComma": [2, "es5"],
+    "arrowParens": [2, "always"],
+    "singleQuote": [2, "true"]
+  }
+}

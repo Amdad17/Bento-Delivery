@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c20d00;
+  margin: 0 auto;
+}
+/* 
+.container {
+    height: 100vh;
+    background-color: #c20d00;
+    padding-top: 107px;
+  } */
+.flex-div {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.bento-div {
+  display: flex;
+  width: 220px;
+  height: 73px;
+  justify-content: center;
+}
+.bento-h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+.bento-logo-img {
+  height: 100px;
+  width: 80px;
+  margin-bottom: 15px;
+  /* margin-top: 12px; */
+}
+.drawer-container {
+  border: 1px solid red;
+}

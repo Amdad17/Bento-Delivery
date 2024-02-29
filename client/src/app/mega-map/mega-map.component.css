@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+}
+.match-parent {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}

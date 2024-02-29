@@ -1,0 +1,352 @@
+[
+  {
+    "restaurantId": 1,
+    "utilizationRate": 75,
+    "timestamp": "2024-02-06T08:30:00.000Z",
+    "coordinates": [51.5074, -0.1278],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 2,
+    "utilizationRate": 60,
+    "timestamp": "2024-02-06T09:45:00.000Z",
+    "coordinates": [51.5185, -0.1389],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 3,
+    "utilizationRate": 85,
+    "timestamp": "2024-02-06T11:00:00.000Z",
+    "coordinates": [51.5099, -0.1337],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 4,
+    "utilizationRate": 40,
+    "timestamp": "2024-02-06T12:15:00.000Z",
+    "coordinates": [51.5133, -0.1276],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 5,
+    "utilizationRate": 95,
+    "timestamp": "2024-02-06T13:30:00.000Z",
+    "coordinates": [51.5071, -0.128],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 6,
+    "utilizationRate": 20,
+    "timestamp": "2024-02-06T14:45:00.000Z",
+    "coordinates": [51.5137, -0.1246],
+    "utilizationType": "LU"
+  },
+  {
+    "restaurantId": 7,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-06T16:00:00.000Z",
+    "coordinates": [51.5093, -0.1214],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 8,
+    "utilizationRate": 55,
+    "timestamp": "2024-02-06T17:15:00.000Z",
+    "coordinates": [51.5042, -0.1337],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 9,
+    "utilizationRate": 80,
+    "timestamp": "2024-02-06T18:30:00.000Z",
+    "coordinates": [51.4989, -0.1334],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 10,
+    "utilizationRate": 90,
+    "timestamp": "2024-02-06T19:45:00.000Z",
+    "coordinates": [51.5032, -0.1246],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 11,
+    "utilizationRate": 50,
+    "timestamp": "2024-02-06T20:00:00.000Z",
+    "coordinates": [51.4975, -0.1215],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 12,
+    "utilizationRate": 65,
+    "timestamp": "2024-02-06T21:15:00.000Z",
+    "coordinates": [51.4928, -0.1197],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 13,
+    "utilizationRate": 75,
+    "timestamp": "2024-02-06T22:30:00.000Z",
+    "coordinates": [51.4938, -0.1082],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 14,
+    "utilizationRate": 80,
+    "timestamp": "2024-02-06T23:45:00.000Z",
+    "coordinates": [51.4993, -0.1094],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 15,
+    "utilizationRate": 35,
+    "timestamp": "2024-02-07T00:00:00.000Z",
+    "coordinates": [51.5052, -0.1174],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 16,
+    "utilizationRate": 90,
+    "timestamp": "2024-02-07T01:15:00.000Z",
+    "coordinates": [51.5116, -0.1219],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 17,
+    "utilizationRate": 40,
+    "timestamp": "2024-02-07T02:30:00.000Z",
+    "coordinates": [51.5164, -0.1174],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 18,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-07T03:45:00.000Z",
+    "coordinates": [51.5147, -0.1033],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 19,
+    "utilizationRate": 85,
+    "timestamp": "2024-02-07T05:00:00.000Z",
+    "coordinates": [51.5048, -0.0972],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 20,
+    "utilizationRate": 55,
+    "timestamp": "2024-02-07T06:15:00.000Z",
+    "coordinates": [51.4921, -0.088],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 21,
+    "utilizationRate": 60,
+    "timestamp": "2024-02-07T07:30:00.000Z",
+    "coordinates": [51.4873, -0.0882],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 22,
+    "utilizationRate": 45,
+    "timestamp": "2024-02-07T08:45:00.000Z",
+    "coordinates": [51.4956, -0.0954],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 23,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-07T10:00:00.000Z",
+    "coordinates": [51.5039, -0.1027],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 24,
+    "utilizationRate": 80,
+    "timestamp": "2024-02-07T11:15:00.000Z",
+    "coordinates": [51.5102, -0.1096],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 25,
+    "utilizationRate": 55,
+    "timestamp": "2024-02-07T12:30:00.000Z",
+    "coordinates": [51.5167, -0.1145],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 26,
+    "utilizationRate": 90,
+    "timestamp": "2024-02-07T13:45:00.000Z",
+    "coordinates": [51.5209, -0.1189],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 27,
+    "utilizationRate": 30,
+    "timestamp": "2024-02-07T15:00:00.000Z",
+    "coordinates": [51.5239, -0.1099],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 28,
+    "utilizationRate": 75,
+    "timestamp": "2024-02-07T16:15:00.000Z",
+    "coordinates": [51.5276, -0.0991],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 29,
+    "utilizationRate": 85,
+    "timestamp": "2024-02-07T17:30:00.000Z",
+    "coordinates": [51.5219, -0.0909],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 30,
+    "utilizationRate": 40,
+    "timestamp": "2024-02-07T18:45:00.000Z",
+    "coordinates": [51.5158, -0.0841],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 31,
+    "utilizationRate": 65,
+    "timestamp": "2024-02-07T20:00:00.000Z",
+    "coordinates": [51.509, -0.0847],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 32,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-07T21:15:00.000Z",
+    "coordinates": [51.5038, -0.0915],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 33,
+    "utilizationRate": 50,
+    "timestamp": "2024-02-07T22:30:00.000Z",
+    "coordinates": [51.4976, -0.0986],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 34,
+    "utilizationRate": 95,
+    "timestamp": "2024-02-07T23:45:00.000Z",
+    "coordinates": [51.4933, -0.1078],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 35,
+    "utilizationRate": 25,
+    "timestamp": "2024-02-08T00:00:00.000Z",
+    "coordinates": [51.4987, -0.1187],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 36,
+    "utilizationRate": 80,
+    "timestamp": "2024-02-08T01:15:00.000Z",
+    "coordinates": [51.5043, -0.1276],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 37,
+    "utilizationRate": 60,
+    "timestamp": "2024-02-08T02:30:00.000Z",
+    "coordinates": [51.5098, -0.1332],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 38,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-08T03:45:00.000Z",
+    "coordinates": [51.516, -0.1375],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 39,
+    "utilizationRate": 85,
+    "timestamp": "2024-02-08T05:00:00.000Z",
+    "coordinates": [51.5217, -0.1391],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 40,
+    "utilizationRate": 45,
+    "timestamp": "2024-02-08T06:15:00.000Z",
+    "coordinates": [51.5278, -0.1397],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 41,
+    "utilizationRate": 10,
+    "timestamp": "2024-02-08T07:30:00.000Z",
+    "coordinates": [51.5324, -0.1406],
+    "utilizationType": "LU"
+  },
+  {
+    "restaurantId": 42,
+    "utilizationRate": 55,
+    "timestamp": "2024-02-08T08:45:00.000Z",
+    "coordinates": [51.5369, -0.141],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 43,
+    "utilizationRate": 80,
+    "timestamp": "2024-02-08T10:00:00.000Z",
+    "coordinates": [51.5415, -0.1414],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 44,
+    "utilizationRate": 90,
+    "timestamp": "2024-02-08T11:15:00.000Z",
+    "coordinates": [51.5461, -0.1419],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 45,
+    "utilizationRate": 60,
+    "timestamp": "2024-02-08T12:30:00.000Z",
+    "coordinates": [51.5507, -0.1426],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 46,
+    "utilizationRate": 85,
+    "timestamp": "2024-02-08T13:45:00.000Z",
+    "coordinates": [51.5553, -0.1436],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 47,
+    "utilizationRate": 35,
+    "timestamp": "2024-02-08T15:00:00.000Z",
+    "coordinates": [51.5599, -0.1449],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 48,
+    "utilizationRate": 70,
+    "timestamp": "2024-02-08T16:15:00.000Z",
+    "coordinates": [51.5644, -0.1466],
+    "utilizationType": "MU"
+  },
+  {
+    "restaurantId": 49,
+    "utilizationRate": 75,
+    "timestamp": "2024-02-08T17:30:00.000Z",
+    "coordinates": [51.5688, -0.1486],
+    "utilizationType": "HU"
+  },
+  {
+    "restaurantId": 50,
+    "utilizationRate": 15,
+    "timestamp": "2024-02-08T18:45:00.000Z",
+    "coordinates": [51.5731, -0.1509],
+    "utilizationType": "LU"
+  }
+]

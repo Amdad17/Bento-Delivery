@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "65c1baf7a496a08aeb029be4",
+    "name": "Rider 2",
+    "phoneNumber": "011111111",
+    "riderImage": "image.com",
+    "email": "nuranin@hotmail.com",
+    "password": "$2b$05$FyN3ww/XvmpoxNNFQw7hcOVB32Lth2Lgq1uzlJV1kwM4EUEEALsMm",
+    "vehicleType": "Bike",
+    "onlineStatus": true,
+    "riderRating": 0,
+    "currentOrderList": [],
+    "currentLatLong": {
+      "longitude": -77.0364,
+      "latitude": 38.8951,
+      "_id": "65c1baf7a496a08aeb029be2"
+    },
+    "currentBagCapacity": " X X X ",
+    "riderStates": {
+      "st0": {
+        "completed": false
+      },
+      "st1": {
+        "completed": false,
+        "r1": false
+      },
+      "st2": {
+        "completed": false,
+        "r2": false
+      },
+      "st3": {
+        "completed": false,
+        "d1": false
+      },
+      "st4": {
+        "completed": false,
+        "d2": false
+      },
+      "_id": "65c1baf7a496a08aeb029be3"
+    },
+    "currentFirstOrderRoute": [],
+    "__v": 0
+  },
+  {
+    "_id": "65c1da25ed7da4f2adfd1ef1",
+    "name": "Motor Bike Rider",
+    "phoneNumber": "654120",
+    "riderImage": "image.com",
+    "email": "rider3@hotmail.com",
+    "password": "$2b$05$rJdfMg2sv3Bf3RJGzYx4R.r0uH3c7VrSGJuBylLZgmw1.FbOBvzU6",
+    "vehicleType": "Bike",
+    "onlineStatus": true,
+    "riderRating": 0,
+    "currentOrderList": [],
+    "currentLatLong": {
+      "longitude": -0.1445,
+      "latitude": 51.5145,
+      "_id": "65c1da25ed7da4f2adfd1eef"
+    },
+    "currentBagCapacity": " X X X ",
+    "riderStates": {
+      "st0": {
+        "completed": false
+      },
+      "st1": {
+        "completed": false,
+        "r1": false
+      },
+      "st2": {
+        "completed": false,
+        "r2": false
+      },
+      "st3": {
+        "completed": false,
+        "d1": false
+      },
+      "st4": {
+        "completed": false,
+        "d2": false
+      },
+      "_id": "65c1da25ed7da4f2adfd1ef0"
+    },
+    "currentFirstOrderRoute": [],
+    "__v": 0
+  },
+  {
+    "_id": "65c1dadbed7da4f2adfd1ef5",
+    "name": "Car Rider",
+    "phoneNumber": "654120",
+    "riderImage": "image.com",
+    "email": "rider3@hotmail.com",
+    "password": "$2b$05$jss2LshIC5k5EaJUWKtWFuxQ0QmPJhrHYKd4hh3RiVK6Wz.iYYviS",
+    "vehicleType": "Car",
+    "onlineStatus": true,
+    "riderRating": 0,
+    "currentOrderList": [],
+    "currentLatLong": {
+      "longitude": -0.1445,
+      "latitude": 51.5145,
+      "_id": "65c1dadbed7da4f2adfd1ef3"
+    },
+    "currentBagCapacity": " X X X ",
+    "riderStates": {
+      "st0": {
+        "completed": false
+      },
+      "st1": {
+        "completed": false,
+        "r1": false
+      },
+      "st2": {
+        "completed": false,
+        "r2": false
+      },
+      "st3": {
+        "completed": false,
+        "d1": false
+      },
+      "st4": {
+        "completed": false,
+        "d2": false
+      },
+      "_id": "65c1dadbed7da4f2adfd1ef4"
+    },
+    "currentFirstOrderRoute": [],
+    "__v": 0
+  },
+  {
+    "_id": "65c1dae5ed7da4f2adfd1ef9",
+    "name": "Cycle Rider",
+    "phoneNumber": "654120",
+    "riderImage": "image.com",
+    "email": "rider3@hotmail.com",
+    "password": "$2b$05$fWKra6uu6xEVDya/s0f2Y.Sc7auKHkqL7R.1ptnhe79WYaPZc4eFO",
+    "vehicleType": "Cycle",
+    "onlineStatus": true,
+    "riderRating": 0,
+    "currentOrderList": [],
+    "currentLatLong": {
+      "longitude": -0.1445,
+      "latitude": 51.5145,
+      "_id": "65c1dae5ed7da4f2adfd1ef7"
+    },
+    "currentBagCapacity": " X X X ",
+    "riderStates": {
+      "st0": {
+        "completed": false
+      },
+      "st1": {
+        "completed": false,
+        "r1": false
+      },
+      "st2": {
+        "completed": false,
+        "r2": false
+      },
+      "st3": {
+        "completed": false,
+        "d1": false
+      },
+      "st4": {
+        "completed": false,
+        "d2": false
+      },
+      "_id": "65c1dae5ed7da4f2adfd1ef8"
+    },
+    "currentFirstOrderRoute": [],
+    "__v": 0
+  }
+]

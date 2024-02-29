@@ -1,0 +1,635 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@mapbox/mapbox-gl-directions": "^4.2.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.2",
+    "@turf/boolean-intersects": "^6.5.0",
+    "@turf/boolean-overlap": "^6.5.0",
+    "@turf/turf": "^6.5.0",
+    "@types/geojson": "^7946.0.14",
+    "@types/mapbox-gl": "^2.7.20",
+    "geojson": "^0.5.0",
+    "lottie-web": "^5.12.2",
+    "mapbox-gl": "^3.1.2",
+    "ng-zorro-antd": "^17.2.0",
+    "rxjs": "~7.8.0",
+    "socket.io-client": "^4.7.4",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.8",
+    "@angular-eslint/builder": "17.2.1",
+    "@angular-eslint/eslint-plugin": "17.2.1",
+    "@angular-eslint/eslint-plugin-template": "17.2.1",
+    "@angular-eslint/schematics": "17.2.1",
+    "@angular-eslint/template-parser": "17.2.1",
+    "@angular/cli": "^17.0.8",
+    "@angular/compiler-cli": "^17.0.0",
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-angular": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "@types/jasmine": "~5.1.0",
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.7",
+    "@types/socket.io-client": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.10",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.1",
+    "prettier": "^3.2.4",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "8260877646315742228"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9172062908973558995"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "467801964371427878"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "4736935528145382874"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "2412386309293232037"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "8391475512072222269"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "736652765273912057"
+      },
+      {
+        "file": "README.md",
+        "hash": "3038664265494603209"
+      },
+      {
+        "file": "angular.json",
+        "hash": "16365901718316992273"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "8886727336632577122"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3411391811937585826"
+      },
+      {
+        "file": "package.json",
+        "hash": "5212696918311805485"
+      },
+      {
+        "file": "src/app/animation/animation.component.css",
+        "hash": "7854511228556029283"
+      },
+      {
+        "file": "src/app/animation/animation.component.html",
+        "hash": "190251359983138698"
+      },
+      {
+        "file": "src/app/animation/animation.component.spec.ts",
+        "hash": "7548054492418800260"
+      },
+      {
+        "file": "src/app/animation/animation.component.ts",
+        "hash": "9401670409329156581"
+      },
+      {
+        "file": "src/app/app-routing.module.ts",
+        "hash": "5515145434633238547"
+      },
+      {
+        "file": "src/app/app.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "17816966185630879015"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "18327091338034405287"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "17496053319002890724"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "10658850512891400897"
+      },
+      {
+        "file": "src/app/drawer/drawer.component.css",
+        "hash": "12198409043598638962"
+      },
+      {
+        "file": "src/app/drawer/drawer.component.html",
+        "hash": "5034399446362293672"
+      },
+      {
+        "file": "src/app/drawer/drawer.component.spec.ts",
+        "hash": "12797318670128441371"
+      },
+      {
+        "file": "src/app/drawer/drawer.component.ts",
+        "hash": "3255266094767725044"
+      },
+      {
+        "file": "src/app/edit-profile/edit-profile.component.css",
+        "hash": "2554969694458628166"
+      },
+      {
+        "file": "src/app/edit-profile/edit-profile.component.html",
+        "hash": "11657814482681108574"
+      },
+      {
+        "file": "src/app/edit-profile/edit-profile.component.spec.ts",
+        "hash": "369675357410092555"
+      },
+      {
+        "file": "src/app/edit-profile/edit-profile.component.ts",
+        "hash": "4696936329956867381"
+      },
+      {
+        "file": "src/app/girl-searching-animation/girl-searching-animation.component.css",
+        "hash": "20216259407418578"
+      },
+      {
+        "file": "src/app/girl-searching-animation/girl-searching-animation.component.html",
+        "hash": "4687512135485271798"
+      },
+      {
+        "file": "src/app/girl-searching-animation/girl-searching-animation.component.spec.ts",
+        "hash": "18260104416649309671"
+      },
+      {
+        "file": "src/app/girl-searching-animation/girl-searching-animation.component.ts",
+        "hash": "10514497071806602416"
+      },
+      {
+        "file": "src/app/interceptors/auth.interceptor.spec.ts",
+        "hash": "5416216944368103759"
+      },
+      {
+        "file": "src/app/interceptors/auth.interceptor.ts",
+        "hash": "7725938045437077246"
+      },
+      {
+        "file": "src/app/interceptors/token.interceptor.spec.ts",
+        "hash": "7211038484843794999"
+      },
+      {
+        "file": "src/app/interceptors/token.interceptor.ts",
+        "hash": "1702471985910113736"
+      },
+      {
+        "file": "src/app/interfaces/Feature.interface.ts",
+        "hash": "8103622233954078133"
+      },
+      {
+        "file": "src/app/interfaces/IHub.interface.ts",
+        "hash": "13054492925323762537"
+      },
+      {
+        "file": "src/app/interfaces/IRider.interface.ts",
+        "hash": "2634751109884810640"
+      },
+      {
+        "file": "src/app/interfaces/ISignIn.interface.ts",
+        "hash": "2579034545295170041"
+      },
+      {
+        "file": "src/app/interfaces/Isignup.interface.ts",
+        "hash": "8461084452661207815"
+      },
+      {
+        "file": "src/app/interfaces/gettingRoute.interface.ts",
+        "hash": "14012400651220715995"
+      },
+      {
+        "file": "src/app/map/map.component.css",
+        "hash": "13216400578410967251"
+      },
+      {
+        "file": "src/app/map/map.component.html",
+        "hash": "9009538063321032157"
+      },
+      {
+        "file": "src/app/map/map.component.spec.ts",
+        "hash": "15868270808859748965"
+      },
+      {
+        "file": "src/app/map/map.component.ts",
+        "hash": "5973370443306625500"
+      },
+      {
+        "file": "src/app/mega-map/mega-map.component.css",
+        "hash": "3686932079465832820"
+      },
+      {
+        "file": "src/app/mega-map/mega-map.component.html",
+        "hash": "10152047565243556261"
+      },
+      {
+        "file": "src/app/mega-map/mega-map.component.spec.ts",
+        "hash": "11071704997260088240"
+      },
+      {
+        "file": "src/app/mega-map/mega-map.component.ts",
+        "hash": "1095159595710645488"
+      },
+      {
+        "file": "src/app/navigation-amination/navigation-amination.component.css",
+        "hash": "9189561452893638856"
+      },
+      {
+        "file": "src/app/navigation-amination/navigation-amination.component.html",
+        "hash": "3048932607411422819"
+      },
+      {
+        "file": "src/app/navigation-amination/navigation-amination.component.spec.ts",
+        "hash": "13838801034185068899"
+      },
+      {
+        "file": "src/app/navigation-amination/navigation-amination.component.ts",
+        "hash": "4928378511208126171"
+      },
+      {
+        "file": "src/app/online-status/online-status.component.css",
+        "hash": "1421523080502150641"
+      },
+      {
+        "file": "src/app/online-status/online-status.component.html",
+        "hash": "5519692069573201597"
+      },
+      {
+        "file": "src/app/online-status/online-status.component.spec.ts",
+        "hash": "4660454711698324361"
+      },
+      {
+        "file": "src/app/online-status/online-status.component.ts",
+        "hash": "18170015487869040574"
+      },
+      {
+        "file": "src/app/order-conform-animation/order-conform-animation.component.css",
+        "hash": "5364842942882279181"
+      },
+      {
+        "file": "src/app/order-conform-animation/order-conform-animation.component.html",
+        "hash": "7524712069589520964"
+      },
+      {
+        "file": "src/app/order-conform-animation/order-conform-animation.component.spec.ts",
+        "hash": "4510049736832762761"
+      },
+      {
+        "file": "src/app/order-conform-animation/order-conform-animation.component.ts",
+        "hash": "16536320265841387759"
+      },
+      {
+        "file": "src/app/order-deliverd/order-deliverd.component.css",
+        "hash": "8168007319253873238"
+      },
+      {
+        "file": "src/app/order-deliverd/order-deliverd.component.html",
+        "hash": "11910827553815881921"
+      },
+      {
+        "file": "src/app/order-deliverd/order-deliverd.component.spec.ts",
+        "hash": "6802242400795506779"
+      },
+      {
+        "file": "src/app/order-deliverd/order-deliverd.component.ts",
+        "hash": "2496286939823681636"
+      },
+      {
+        "file": "src/app/order-notification/order-notification.component.css",
+        "hash": "2699618771241586154"
+      },
+      {
+        "file": "src/app/order-notification/order-notification.component.html",
+        "hash": "3169787178000152241"
+      },
+      {
+        "file": "src/app/order-notification/order-notification.component.spec.ts",
+        "hash": "11290582240434301912"
+      },
+      {
+        "file": "src/app/order-notification/order-notification.component.ts",
+        "hash": "15977079214405509095"
+      },
+      {
+        "file": "src/app/rider-history/rider-history.component.css",
+        "hash": "17102933374091548675"
+      },
+      {
+        "file": "src/app/rider-history/rider-history.component.html",
+        "hash": "13245334266572676414"
+      },
+      {
+        "file": "src/app/rider-history/rider-history.component.spec.ts",
+        "hash": "14248249991798339806"
+      },
+      {
+        "file": "src/app/rider-history/rider-history.component.ts",
+        "hash": "6529551959613806623"
+      },
+      {
+        "file": "src/app/rider-profile/rider-profile.component.css",
+        "hash": "14684482298105201358"
+      },
+      {
+        "file": "src/app/rider-profile/rider-profile.component.html",
+        "hash": "3793356414719568407"
+      },
+      {
+        "file": "src/app/rider-profile/rider-profile.component.spec.ts",
+        "hash": "16497299245134552082"
+      },
+      {
+        "file": "src/app/rider-profile/rider-profile.component.ts",
+        "hash": "873194201175748587"
+      },
+      {
+        "file": "src/app/services/cloudinary-service.service.spec.ts",
+        "hash": "10411043578326800817"
+      },
+      {
+        "file": "src/app/services/cloudinary-service.service.ts",
+        "hash": "4528951440890835249"
+      },
+      {
+        "file": "src/app/services/map.service.spec.ts",
+        "hash": "16958895426065219708"
+      },
+      {
+        "file": "src/app/services/map.service.ts",
+        "hash": "7924424450018410238"
+      },
+      {
+        "file": "src/app/services/sign-in.service.spec.ts",
+        "hash": "1109643956663505410"
+      },
+      {
+        "file": "src/app/services/sign-in.service.ts",
+        "hash": "16652801971739541660"
+      },
+      {
+        "file": "src/app/services/signup.service.spec.ts",
+        "hash": "354398140922565695"
+      },
+      {
+        "file": "src/app/services/signup.service.ts",
+        "hash": "3814095006166246609"
+      },
+      {
+        "file": "src/app/sign-in/sign-in.component.css",
+        "hash": "11840583019855165309"
+      },
+      {
+        "file": "src/app/sign-in/sign-in.component.html",
+        "hash": "1108824750929877484"
+      },
+      {
+        "file": "src/app/sign-in/sign-in.component.spec.ts",
+        "hash": "2427592119430827070"
+      },
+      {
+        "file": "src/app/sign-in/sign-in.component.ts",
+        "hash": "17974107008345696478"
+      },
+      {
+        "file": "src/app/sign-up/sign-up.component.css",
+        "hash": "2554969694458628166"
+      },
+      {
+        "file": "src/app/sign-up/sign-up.component.html",
+        "hash": "6091383445547859212"
+      },
+      {
+        "file": "src/app/sign-up/sign-up.component.spec.ts",
+        "hash": "5419502012232895580"
+      },
+      {
+        "file": "src/app/sign-up/sign-up.component.ts",
+        "hash": "10524352596232271498"
+      },
+      {
+        "file": "src/app/test-for-bento/test-for-bento.component.css",
+        "hash": "5787375116765234648"
+      },
+      {
+        "file": "src/app/test-for-bento/test-for-bento.component.html",
+        "hash": "3166675131343863343"
+      },
+      {
+        "file": "src/app/test-for-bento/test-for-bento.component.spec.ts",
+        "hash": "8004942571543370699"
+      },
+      {
+        "file": "src/app/test-for-bento/test-for-bento.component.ts",
+        "hash": "4538067391649007705"
+      },
+      {
+        "file": "src/app/utlis/utils.ts",
+        "hash": "4307382995306560408"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/fonts/GT-Pressura-Extended-Black.woff2",
+        "hash": "5845663858251271123"
+      },
+      {
+        "file": "src/assets/fonts/proximanova-regular-webfont.woff2",
+        "hash": "5118965054312263342"
+      },
+      {
+        "file": "src/assets/images/Done.png",
+        "hash": "13821323934060986372"
+      },
+      {
+        "file": "src/assets/images/Ellipse.png",
+        "hash": "17074818491532263286"
+      },
+      {
+        "file": "src/assets/images/Home-removebg-preview.png",
+        "hash": "4053490978165433890"
+      },
+      {
+        "file": "src/assets/images/Home.png",
+        "hash": "15320480142581007633"
+      },
+      {
+        "file": "src/assets/images/Rectangle.png",
+        "hash": "13143060806130562042"
+      },
+      {
+        "file": "src/assets/images/chef-hat.png",
+        "hash": "16523760005588932463"
+      },
+      {
+        "file": "src/assets/images/cycle-removebg.png",
+        "hash": "2291291122362490367"
+      },
+      {
+        "file": "src/assets/images/glovo1.png",
+        "hash": "11498406136188324371"
+      },
+      {
+        "file": "src/assets/images/house.png",
+        "hash": "700390144883848856"
+      },
+      {
+        "file": "src/assets/images/line.png",
+        "hash": "7993531743051324852"
+      },
+      {
+        "file": "src/assets/images/location.png",
+        "hash": "5243059466663090785"
+      },
+      {
+        "file": "src/assets/images/logo.png",
+        "hash": "7854440463709489664"
+      },
+      {
+        "file": "src/assets/images/map-img.png",
+        "hash": "10947781962420781371"
+      },
+      {
+        "file": "src/assets/images/res.png",
+        "hash": "5622002367400314257"
+      },
+      {
+        "file": "src/assets/images/rider.png",
+        "hash": "8651636737374310947"
+      },
+      {
+        "file": "src/assets/images/riderprofile.jpg",
+        "hash": "7964798307959009112"
+      },
+      {
+        "file": "src/assets/images/scooter-removebg.png",
+        "hash": "5660718573803191383"
+      },
+      {
+        "file": "src/assets/json/RestaurantsWithAllInfo.json",
+        "hash": "2890951709665474406"
+      },
+      {
+        "file": "src/assets/json/bike.json",
+        "hash": "5378300725080174493"
+      },
+      {
+        "file": "src/assets/json/bikeEdited.json",
+        "hash": "3189754580895727638"
+      },
+      {
+        "file": "src/assets/json/bikeRider.json",
+        "hash": "15790227838564201988"
+      },
+      {
+        "file": "src/assets/json/customers.json",
+        "hash": "6767157117296359191"
+      },
+      {
+        "file": "src/assets/json/girl.json",
+        "hash": "6939436810487161094"
+      },
+      {
+        "file": "src/assets/json/girledit.json",
+        "hash": "1308353641734170345"
+      },
+      {
+        "file": "src/assets/json/movingrider.json",
+        "hash": "8835439665599819392"
+      },
+      {
+        "file": "src/assets/json/runing.json",
+        "hash": "1375227180554321653"
+      },
+      {
+        "file": "src/assets/photos and logos/bento-logo.png",
+        "hash": "13589257360759273432"
+      },
+      {
+        "file": "src/assets/photos and logos/logo-2.png",
+        "hash": "16367590748049705383"
+      },
+      {
+        "file": "src/environments/environment.development.ts",
+        "hash": "17823615908395781118"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "16290839692682594768"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "3600579225871746209"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "3259059517603285449"
+      },
+      {
+        "file": "src/styles.css",
+        "hash": "460047487850745163"
+      },
+      {
+        "file": "src/theme.less",
+        "hash": "4433551583440036366"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "13119632651406065538"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "2730661732431136756"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "5122839733245053999"
+      }
+    ]
+  }
+}
