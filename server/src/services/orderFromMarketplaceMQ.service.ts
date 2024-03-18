@@ -1,8 +1,8 @@
 import amqp, { Channel, Connection } from 'amqplib';
 
 import { io } from '..';
-import { IOrder } from '../Interfaces/IOrder';
-import { assignRiderToOrder, createOrder } from '../Models/order/order.query';
+import { IOrder } from '../interfaces/IOrder';
+import { assignRiderToOrder, createOrder } from '../models/order/order.query';
 
 const queue = 'marketplaceToRider';
 let connection: Connection;

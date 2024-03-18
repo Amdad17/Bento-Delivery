@@ -1,4 +1,4 @@
-import { IOrder } from '../Interfaces/IOrder';
+import { IOrder } from '../interfaces/IOrder';
 
 export function calculateDeliveryTime(order: IOrder) {
   let maxPreparationTime = 0;

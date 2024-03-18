@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-import { ICustomerPreference } from '../../Interfaces/ICustomer';
+import { ICustomerPreference } from '../../interfaces/ICustomer';
 
 export const TastyTagsSchema = new Schema(
   {

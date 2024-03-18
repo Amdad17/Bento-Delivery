@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IHub } from '../../Interfaces/IHub';
+import { IHub } from '../../interfaces/IHub';
 // import { IRider } from '../../Interfaces/IRider';
 
 // const riderSchema = new Schema<IRider>({

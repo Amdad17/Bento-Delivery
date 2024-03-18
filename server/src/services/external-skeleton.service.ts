@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 //eslint-disable-next-line
-import { IRestaurant, IRestaurantShortInfo } from '../Interfaces/IRestaurant';
+import { IRestaurant, IRestaurantShortInfo } from '../interfaces/IRestaurant';
+import { IUtilizationData } from '../interfaces/IUtilizationData';
 //eslint-disable-next-line
 export async function getRestaurantShortInfo(resId?: number) {
   try {
@@ -21,17 +22,20 @@ export async function getRestaurantShortInfo(resId?: number) {
       restaurantLatitude,
     } as IRestaurantShortInfo;
 
-    // const RestaurantShortInfo = {
-    //   restaurantId: 1,
-    //   restaurantName: 'Test Restaurant',
-    //   address: 'Test Address',
-    //   restaurantLongitude: -0.21275,
-    //   restaurantLatitude: 51.554757,
-    // } as IRestaurantShortInfo;
-
     return RestaurantShortInfo;
   } catch (error) {
-    console.log('Error fetching restaurant data from Skeleton:', error);
     console.error('Error fetching restaurant data from Skeleton:', error);
+  }
+}
+
+export async function getAllUtilizationDatas() {
+  try {
+    const res = await axios.get(
+      process.env.SKELETON_BE_BASE_URL + '/utilization/current/all/?delivery=true',
+    );
+    // eslint-disable-next-line
+    return res.data.data as IUtilizationData[];
+  } catch (error) {
+    throw new Error('Error getting utilization datas from Skeleton.');
   }
 }

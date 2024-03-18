@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IOrder } from '../../Interfaces/IOrder';
+import { IOrder } from '../../interfaces/IOrder';
 import { itemSchema } from '../helperSchemas/itemSchema.model';
 
 export const OrderSchema = new Schema<IOrder>(

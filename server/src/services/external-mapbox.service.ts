@@ -4,9 +4,9 @@ import {
   DistanceDurationResponse,
   IFeatureCollection,
   MapboxDirection,
-} from '../Interfaces/IMapBox';
-import { IRider } from '../Interfaces/IRider';
-import { getAvailableRiders } from '../Models/rider/rider.query';
+} from '../interfaces/IMapBox';
+import { IRider } from '../interfaces/IRider';
+import { getAvailableRiders } from '../models/rider/rider.query';
 import { formatDateToString } from '../utils/formatDateUtils';
 import { calculateMaxPreparationTime } from '../utils/orderUtils';
 import { convertRidersToCoordinates, isPointInsidePolygon } from '../utils/riderUtils';
@@ -53,7 +53,6 @@ export async function getAllPotentialRidersOfIsochrone(
 
     return ridersInAscending;
   } catch (error) {
-    console.log('Error getting all potential riders from Isochrome', error);
     console.error('Error getting all potential riders from Isochrome', error);
   }
 }
@@ -88,7 +87,6 @@ export async function getAllRidersInAscendingOrder2(
 
     return availableRiders;
   } catch (error) {
-    console.log('Error getting all riders in ascending order', error);
     console.error('Error getting all riders in ascending order', error);
   }
 }
@@ -241,11 +239,6 @@ export async function getSequenceForTwoOrders(rider: IRider) {
         sequenceTravelTime.push(directionMatrix.durations[1][3]);
       }
     }
-    console.log('maxPreparaionTimeOfOrder1InSeconds', maxPreparaionTimeOfOrder1InSeconds);
-    console.log('maxPreparaionTimeOfOrder2InSeconds', maxPreparaionTimeOfOrder2InSeconds);
-
-    console.log('sequenceTravelTime', sequenceTravelTime);
-    console.log('sequenceList', sequenceList);
 
     const sequenceObjectList = [];
 
@@ -301,10 +294,6 @@ export async function getSequenceForOneOrders(rider: IRider) {
     sequenceTravelTime.push(directionMatrix.durations[0][1]);
     sequenceList.push('customer1');
     sequenceTravelTime.push(directionMatrix.durations[1][2]);
-
-    console.log(directionMatrix.durations);
-    console.log('sequenceTravelTime', sequenceTravelTime);
-    console.log('sequenceList', sequenceList);
 
     const maxPreparaionTimeOfOrder1 = calculateMaxPreparationTime(rider.currentOrderList[0]);
     const maxDeliveryTimeOfOrder1 = rider.currentOrderList[0].orderDeliveryTime.maxTime;

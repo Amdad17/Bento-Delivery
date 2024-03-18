@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-import { IRiderStates } from '../../Interfaces/IRider';
+import { IRiderStates } from '../../interfaces/IRider';
 import { CustomerSchema } from '../customer/customer.model';
 
 import { RestaurantShortInfoSchema } from './RestaurantShortInfoSchema.model';

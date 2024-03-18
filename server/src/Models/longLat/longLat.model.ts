@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-import { ILongLat } from '../../Interfaces/ILongLat';
+import { ILongLat } from '../../interfaces/ILongLat';
 
 export const LongLatSchema = new Schema<ILongLat>(
   {

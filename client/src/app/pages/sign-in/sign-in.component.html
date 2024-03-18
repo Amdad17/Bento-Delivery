@@ -1,0 +1,32 @@
+<div class="header-div">
+  <h2 class="signInHeader">Sign In</h2>
+</div>
+
+<div style="margin-top: 100px">
+  <form
+    [formGroup]="signInForm"
+    class="flex justify-center items-center flex-col gap-y-5 font-bold"
+    action=""
+  >
+    <input
+      formControlName="email"
+      class="input-field wp-80 px-5 py-5 h-7 border-0 rounded rounded-2xl"
+      nz-input
+      type="email"
+      placeholder="Email"
+    />
+
+    <input
+      formControlName="password"
+      class="input-field wp-80 px-5 py-5 h-7 border-0 rounded rounded-2xl"
+      nz-input
+      type="password"
+      placeholder="Password"
+    />
+  </form>
+</div>
+
+<div class="signIn-btn-div">
+  <a>Don't have an account?</a>
+  <button (click)="signIn()" type="button" class="signIn-btn">Sign In</button>
+</div>

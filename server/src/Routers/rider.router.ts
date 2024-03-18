@@ -9,7 +9,9 @@ import {
   findRiderById,
   findAllRiders,
   markRiderTaskAsDone,
-} from '../Controllers/rider.controller';
+  makeAllRidersOfflineController,
+  makeAllRidersOnlineController,
+} from '../controllers/rider.controller';
 const riderRouter = express.Router();
 
 riderRouter.post('/signup', riderSignup);
@@ -21,5 +23,7 @@ riderRouter.get('/findRider/:id', findRiderById);
 riderRouter.get('/all', findAllRiders);
 
 riderRouter.put('/completeTask/:id', markRiderTaskAsDone);
+riderRouter.put('/makeAllRidersOffline', makeAllRidersOfflineController);
+riderRouter.put('/makeAllRidersOnline', makeAllRidersOnlineController);
 
 export default riderRouter;

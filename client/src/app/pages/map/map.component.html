@@ -1,0 +1,149 @@
+<div class="map" id="map" class="match-parent"></div>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <div class="center-div">
+        <div class="profile-info-div" *ngIf="riderInfo?.rider">
+          <img src="{{ riderInfo.rider.riderImage }}" alt="" />
+          <p>{{ riderInfo.rider.name }}</p>
+          <hr style="border-color: #00a080" />
+        </div>
+
+        <div class="mt">
+          <a
+            tabindex="0"
+            (click)="openForProfile()"
+            (keyup.enter)="openForProfile()"
+            ><li class="mr">Profile</li></a
+          >
+          <a
+            tabindex="0"
+            (click)="openForRideHistory()"
+            (keyup.enter)="openForProfile()"
+            ><li class="margin-left">Ride history</li></a
+          >
+
+          <a tabindex="0" (click)="showModal()" (keyup.enter)="openForProfile()"
+            ><li class="mr-1">Status</li></a
+          >
+        </div>
+      </div>
+      <button
+        type="button"
+        class="logout-btn"
+        (click)="logout(riderInfo!.rider._id)"
+      >
+        Logout
+      </button>
+    </ul>
+  </div>
+</nav>
+<div
+  style="
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  "
+>
+  <button
+    style="position: relative"
+    class="arrow-btn"
+    type="button"
+    (click)="openForSignin()"
+  >
+    <span class="arrow-icon" nzTheme="outline">Swipe up</span>
+    <span
+      *ngIf="this.riderInfo?.rider?.currentOrderList?.length"
+      class="order-count"
+      >{{ this.riderInfo.rider.currentOrderList.length }}</span
+    >
+  </button>
+  <!-- <nz-carousel nzAutoPlay>
+    @for (index of array; track index) {
+      <div nz-carousel-content>
+        <h3>{{ index }}</h3>
+      </div>
+    }
+  </nz-carousel> -->
+</div>
+
+<nz-drawer
+  style="border-radius: 28px"
+  [nzHeight]="200"
+  nzWidth="100%"
+  [nzClosable]="false"
+  [nzVisible]="visibleForProfile"
+  nzPlacement="left"
+  nzTitle=""
+  (nzOnClose)="closeForProfile()"
+>
+  <ng-container *nzDrawerContent>
+    <!-- <h1>Hello</h1> -->
+    <app-rider-profile
+      [riderInfo]="riderInfo"
+      (notifyParent)="closeForProfile()"
+    ></app-rider-profile>
+  </ng-container>
+</nz-drawer>
+
+<nz-drawer
+  class="ant-drawer-content"
+  [nzHeight]="200"
+  nzWidth="100%"
+  [nzClosable]="false"
+  [nzVisible]="visibleForRideHistory"
+  nzPlacement="left"
+  nzTitle=""
+  (nzOnClose)="closeForRideHistory()"
+>
+  <ng-container *nzDrawerContent>
+    <app-rider-history
+      (notifyParent)="closeForRideHistory()"
+    ></app-rider-history>
+  </ng-container>
+</nz-drawer>
+
+<nz-drawer
+  style="border-radius: 28px"
+  [nzHeight]="660"
+  [nzClosable]="false"
+  [nzVisible]="visibleForSignin"
+  nzPlacement="bottom"
+  nzTitle=""
+  (nzOnClose)="closeForSignin()"
+>
+  <ng-container *nzDrawerContent>
+    <app-order-notification [riderInfo]="riderInfo"></app-order-notification>
+  </ng-container>
+</nz-drawer>
+
+<!-- //Modal for status -->
+
+<!-- <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <ng-container *nzModalContent>
+    <p>Content one</p>
+    <p>Content two</p>
+    <p>Content three</p>
+  </ng-container>
+</nz-modal> -->
+
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle=""
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+  [nzOkLoading]="isOkLoading"
+>
+  <!-- <p *nzModalContent>Modal Content</p> -->
+  <div *nzModalContent>
+    <app-online-status [riderInfo]="riderInfo"></app-online-status>
+  </div>
+</nz-modal>

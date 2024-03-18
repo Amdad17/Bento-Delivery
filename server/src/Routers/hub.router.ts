@@ -1,19 +1,13 @@
 import express from 'express';
 
 import {
-  // updateAllHubs,
   assignRiderToHub,
   removeRiderfromHub,
   getAllHubsInZone,
   getAllHubsByCustomerLocation,
-} from '../Controllers/hubPointController';
-// import { utilizationDataController } from '../Controllers/utilizationData.controller';
+} from '../controllers/hubPointController';
 
 const router = express.Router();
-
-// router.get('/utilization-data', utilizationDataController);
-// router.get('/hub-point', updateAllHubsAndReturnRiderData);
-// router.get('/update-hubs', updateAllHubs);
 
 router.post('/assign-rider/:id', assignRiderToHub);
 router.put('/remove-rider/hub/:hubId/rider/:riderId', removeRiderfromHub);

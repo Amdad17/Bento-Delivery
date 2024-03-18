@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { ICustomer } from '../../Interfaces/ICustomer';
+import { ICustomer } from '../../interfaces/ICustomer';
 import { CustomerPreferenceSchema } from '../helperSchemas/customerPreference.model';
 import { LongLatSchema } from '../longLat/longLat.model';
 

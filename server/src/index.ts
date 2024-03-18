@@ -10,12 +10,11 @@ import cron from 'node-cron';
 import { Server } from 'socket.io';
 
 import config from './config';
-import bagRouter from './Routers/bagChecker.router';
-import customerRouter from './Routers/customer.router';
-import hubRouter from './Routers/hub.router';
-import orderRouter from './Routers/order.router';
-import riderRouter from './Routers/rider.router';
-import RiderDailyRecordsRouter from './Routers/riderDailyRecords.router';
+import customerRouter from './routers/customer.router';
+import hubRouter from './routers/hub.router';
+import orderRouter from './routers/order.router';
+import riderRouter from './routers/rider.router';
+import RiderDailyRecordsRouter from './routers/riderDailyRecords.router';
 import {
   closeMQConnection,
   connectAnConsumeMarketplaceOrderDataFromMQ,
@@ -38,7 +37,6 @@ app.use(
 
 app.use(express.json());
 
-app.use('/bag-checker', bagRouter);
 app.use('/hub', hubRouter);
 app.use('/rider', riderRouter);
 app.use('/customer', customerRouter);
@@ -46,9 +44,8 @@ app.use('/order', orderRouter);
 app.use('/rider-daily-records', RiderDailyRecordsRouter);
 
 cron.schedule('0 0 * * *', resetAllRidersDailyRecordsToDefault);
-// cron.schedule('*/30 * * * * *', resetAllRidersDailyRecordsToDefault);
 
-cron.schedule('*/59 * * * *', async () => {
+cron.schedule('* */23 * * *', async () => {
   await updateAllRiders();
 });
 
@@ -77,7 +74,7 @@ async function main() {
     await mongoose.connect(uri, {});
     console.log('Mongoose connected');
 
-    app.listen(config.PORT, () => {
+    httpServer.listen(config.PORT, () => {
       console.log(`[server]: Server is running on port ${config.PORT}`);
     });
 
@@ -85,15 +82,9 @@ async function main() {
     await connectAnConsumeMarketplaceOrderDataFromMQ().catch(err => console.error(err));
     console.log('MQ Connected');
 
-    httpServer.listen(config.SOCKET_PORT, () => {
-      console.log(`[socket]: Socket.IO is running on port ${config.SOCKET_PORT}`);
-    });
-
-    console.info('\x1B[31mWARNING! WANRING! CHINESE HACKERS ARE TRYING TO HACK YOUR SERVER!');
-    console.info('\x1B[31mCAUTION! RUSSIAN AGENTS GOT YOUR IP ADDRESS!');
-    console.info(
-      '\x1B[31mDANGER! DANGER! MESSAGE FROM PUTIN: "I don’t know who you are. I don’t know what you want. What I do have are a very particular set of skills. Skills I have acquired over a very long career. Skills that make me a nightmare for people like you. If you dont deliver my order in 2 mins, I will look for you, I will find you and I will kill you!!"',
-    );
+    // httpServer.listen(config.SOCKET_PORT, () => {
+    //   console.log(`[socket]: Socket.IO is running on port ${config.SOCKET_PORT}`);
+    // });
   } catch (err) {
     console.log(err);
   }

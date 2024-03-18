@@ -1,9 +1,7 @@
 import * as turf from '@turf/turf';
 import {
   Entity,
-  IAllRoutes,
   IDoorwayRoutes,
-  RiderInfo,
   State,
   StateType,
 } from '../interfaces/IRider.interface';
@@ -80,7 +78,6 @@ export function processStateData(data: any) {
   for (const key in data) {
     if (Object.hasOwnProperty.call(data, key)) {
       const stateData = data[key];
-      // console.log('stateData',stateData)
       const state = {
         completed: stateData.completed,
         coordinates: [0, 0],
@@ -117,7 +114,6 @@ export function processStateData(data: any) {
               restaurant.restaurantLatitude,
             ];
           } else {
-            // Set coordinates to [0, 0] if data is incomplete
             state.type = 'Restaurant 2';
             state.coordinates = [0, 0];
           }
@@ -135,7 +131,6 @@ export function processStateData(data: any) {
               customer.currentLatLong.latitude,
             ];
           } else {
-            // Set coordinates to [0, 0] if data is incomplete
             state.type = 'Customer 1';
             state.coordinates = [0, 0];
           }
@@ -153,7 +148,6 @@ export function processStateData(data: any) {
               customer.currentLatLong.latitude,
             ];
           } else {
-            // Set coordinates to [0, 0] if data is incomplete
             state.type = 'Customer 2';
             state.coordinates = [0, 0];
           }
@@ -166,52 +160,6 @@ export function processStateData(data: any) {
 
   return states;
 }
-// //eslint-disable-next-line
-// export function processStateData(data: any) {
-//   const states = [];
-
-//   for (const key in data) {
-//     if (Object.hasOwnProperty.call(data, key)) {
-//       const stateData = data[key];
-//       // console.log('stateData',stateData)
-//       const state = {
-//         completed: stateData.completed,
-//         coordinates: [0, 0],
-//         type: '',
-//       };
-
-//       if ('restaurant1' in stateData || 'restaurant2' in stateData) {
-//         const restaurantKey = Object.keys(stateData).find((keys) =>
-//           keys.startsWith('restaurant'),
-//         );
-//         if (restaurantKey) {
-//           const restaurant = stateData[restaurantKey];
-//           state.type = 'Restaurant';
-//           state.coordinates = [
-//             restaurant.restaurantLongitude,
-//             restaurant.restaurantLatitude,
-//           ];
-//         }
-//       } else if ('customer1' in stateData || 'customer2' in stateData) {
-//         const customerKey = Object.keys(stateData).find((keys) =>
-//           keys.startsWith('customer'),
-//         );
-//         if (customerKey) {
-//           const customer = stateData[customerKey];
-//           state.type = 'Customer';
-//           state.coordinates = [
-//             customer.currentLatLong.longitude,
-//             customer.currentLatLong.latitude,
-//           ];
-//         }
-//       }
-
-//       states.push(state);
-//     }
-//   }
-
-//   return states;
-// }
 
 //eslint-disable-next-line
 export function doorwaysData(data: any) {
@@ -220,7 +168,6 @@ export function doorwaysData(data: any) {
   for (const key in data) {
     if (Object.hasOwnProperty.call(data, key)) {
       const stateData = data[key];
-      // console.log('stateData',stateData)
       const state = {
         completed: stateData.completed,
         coordinates: [0, 0],
@@ -244,7 +191,6 @@ export function doorwaysData(data: any) {
               customer.doorwayLatLong.latitude,
             ];
           } else {
-            // Set coordinates to [0, 0] if data is incomplete
             state.type = 'Customer';
             state.coordinates = [0, 0];
             state.doorway = [0, 0];
@@ -256,10 +202,9 @@ export function doorwaysData(data: any) {
     }
   }
 
-  // return states;
   const dynamicState: IDoorwayRoutes = {};
   let stateIndex = 1;
-  states.forEach((stateData, index) => {
+  states.forEach((stateData) => {
     if (stateData.type && stateData.coordinates) {
       const newState = {
         type: stateData.type,
@@ -276,7 +221,6 @@ export function doorwaysData(data: any) {
 
 //eslint-disable-next-line
 export function processSequenceData(data: any) {
-  console.log('from utils', data);
   //eslint-disable-next-line
   const filteredData = data.filter((item: any) => item.sequence !== 'rider');
   //eslint-disable-next-line
@@ -301,13 +245,8 @@ export function processSequenceData(data: any) {
 
 //eslint-disable-next-line
 export function sortingSequence(sortOrder: any, data: any) {
-  console.log('sortOrder', sortOrder);
-  // const formattedSortOrder = sortOrder.map((item: string) => item.replace(/(\d+)/g, ' $1'));
-  // console.log('formatSortOrder',formattedSortOrder)
   //eslint-disable-next-line
   const customSort = (a: any, b: any) => {
-    //   const indexA = sortOrder.indexOf(a.toLowerCase());
-    // const indexB = sortOrder.indexOf(b.toLowerCase());
     const indexA = sortOrder.findIndex(
       //eslint-disable-next-line
       (item: any) => item.toLowerCase() === a.toLowerCase(),
@@ -318,13 +257,10 @@ export function sortingSequence(sortOrder: any, data: any) {
     );
     // If either index is -1 (element not found), return a value that ensures correct sorting
     return indexA - indexB;
-    // return sortOrder.indexOf(a.type.toLowerCase()) - sortOrder.index(b.type.toLowerCase())
   };
-  // const modifiedSortedKeys = ['Restaurant 1','Restaurant 2','Customer 1','Customer 2']
   const sortedKeys = Object.keys(data).sort((a, b) =>
     customSort(data[a].type, data[b].type),
   );
-  console.log('sorted keys', sortedKeys);
   //eslint-disable-next-line
   const sortedData: any = {};
   sortedKeys.forEach((key) => {

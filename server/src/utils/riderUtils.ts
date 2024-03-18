@@ -1,11 +1,11 @@
 import { point, polygon, booleanPointInPolygon, Position } from '@turf/turf';
 
-import { IRider } from '../Interfaces/IRider';
-import { IRiderDailyRecords } from '../Interfaces/IRiderDailyRecords';
+import { IRider } from '../interfaces/IRider';
+import { IRiderDailyRecords } from '../interfaces/IRiderDailyRecords';
 import {
   getRiderDailyRecordsByRiderId,
   resetAllRidersDailyRecords,
-} from '../Models/riderDailyRecords/riderDailyRecords.query';
+} from '../models/riderDailyRecords/riderDailyRecords.query';
 import { getAllPotentialRidersOfIsochrone } from '../services/external-mapbox.service';
 
 export const resetAllRidersDailyRecordsToDefault = async () => {
@@ -54,7 +54,6 @@ export async function assignOneRiderFromOrder(long: number, lat: number, timeRan
       return null;
     }
   } catch (error) {
-    console.log('Error assigning rider to order', error);
     console.error('Error assigning rider to order', error);
   }
 }
@@ -129,7 +128,6 @@ export async function getAllPotentialRiders(
 
     return allPotentialRiders;
   } catch (error) {
-    console.log('Error getting all potential riders', error);
     console.error('Error getting all potential riders', error);
   }
 }
@@ -155,7 +153,6 @@ export const searchRiderForOrder = async (
 
     return findRiderForOrder;
   } catch (error) {
-    console.log('Error searching rider for order', error);
     console.error('Error searching rider for order', error);
   }
 };

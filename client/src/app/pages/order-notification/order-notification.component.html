@@ -1,0 +1,91 @@
+<div class="position">
+  <div>
+    <div class="card">
+      <p>
+        <span style="text-align: center">DUE IN</span>
+        <br />
+        <span id="countdown">{{ setTime }}</span>
+        <br />
+        <span>MIN</span>
+      </p>
+    </div>
+    <div class="container" style="margin-top: 10%">
+      <div class="pickup-container">
+        <div class="chef-div">
+          <img src="../../assets/images/chef-hat.png" alt="" />
+        </div>
+        <div class="pickup-information">
+          <p class="picup-meg">PICK UP FROM</p>
+          <p class="res-name" *ngIf="riderInfo?.rider">
+            {{ riderInfo.rider.riderStates.state1.restaurant1?.restaurantName }}
+          </p>
+          <p class="address" *ngIf="riderInfo?.rider">
+            {{ riderInfo.rider.riderStates.state1.restaurant1?.address }}
+          </p>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="map-btn" (click)="GoToRiderMap()">
+          <img src="../../assets/images/map-img.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 10%">
+      <div class="pickup-container">
+        <div class="chef-div">
+          <img src="../../assets/images/house.png" alt="" />
+        </div>
+        <div class="pickup-information">
+          <p class="picup-meg">DELIVERY TO</p>
+          <p class="res-name" *ngIf="riderInfo?.rider">
+            {{ riderInfo.rider.riderStates.state3.customer1?.name }}
+          </p>
+          <p class="address" *ngIf="riderInfo?.rider">
+            {{ riderInfo.rider.riderStates.state3.customer1?.address }}
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" class="map-btn" (click)="GoToRiderMap()">
+          <img src="../../assets/images/map-img.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="line-div">
+      <img src="../../assets/images/line.png" alt="" />
+    </div>
+    <hr style="border-color: #00a080" />
+    <div class="item-details">
+      <h4>{{ orderCount }} ITEM IN THE ORDER</h4>
+      <p>Biriyani and cutlery</p>
+    </div>
+    <hr style="border-color: #00a080" />
+    <div class="item-details">
+      <h4>DELIVERY INSTRUCTIONS</h4>
+      <p>Ring the doorbell</p>
+    </div>
+
+    <div class="btn-div">
+      <button
+        nz-button
+        class="signIn-btn"
+        [disabled]="!pickup"
+        (click)="pickUpOrder()"
+      >
+        Pick Up
+      </button>
+      <button
+        nz-button
+        class="signIn-btn"
+        [disabled]="!deliver"
+        (click)="orderDeliver()"
+      >
+        Deliver Order
+      </button>
+    </div>
+
+    <div></div>
+  </div>
+</div>

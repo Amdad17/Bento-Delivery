@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { io } from '..';
-import { IOrder } from '../Interfaces/IOrder';
+import { IOrder } from '../interfaces/IOrder';
 import {
   getAllOrders,
   getOrderById,
@@ -12,7 +12,7 @@ import {
   getTotalNumberOfOrdersOfToday,
   assignRiderToOrder,
   createOrder,
-} from '../Models/order/order.query';
+} from '../models/order/order.query';
 
 export async function findAllOrders(req: Request, res: Response) {
   try {

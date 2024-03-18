@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-import { IItem } from '../../Interfaces/IOrder';
+import { IItem } from '../../interfaces/IOrder';
 
 import { packingSchema } from './packingSchema.model';
 

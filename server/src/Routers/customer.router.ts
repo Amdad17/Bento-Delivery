@@ -6,7 +6,7 @@ import {
   findAllCustomers,
   editCustomer,
   removeCustomer,
-} from '../Controllers/customer.controller';
+} from '../controllers/customer.controller';
 const customerRouter = express.Router();
 
 customerRouter.post('/signup', customerSignup);

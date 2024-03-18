@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-import { ICustomer } from '../Interfaces/ICustomer';
-import { IOrder } from '../Interfaces/IOrder';
+import { ICustomer } from '../interfaces/ICustomer';
+import { IOrder } from '../interfaces/IOrder';
 
 export async function getCustomerInfoFromMarketPlace(customerId: string) {
   try {
@@ -13,7 +13,6 @@ export async function getCustomerInfoFromMarketPlace(customerId: string) {
     console.log(restaurant);
     return restaurant;
   } catch (error) {
-    console.log('Error fetching customer data from Marketplace:', error);
     console.error('Error fetching customer data from Marketplace:', error);
   }
 }
@@ -37,7 +36,6 @@ export async function updateOrderInfoInMarketPlace(order: IOrder) {
 
     return updatedOrder;
   } catch (error) {
-    console.log('Error updating order data in Marketplace:', error);
     console.error('Error updating order data in Marketplace:', error);
     return null;
   }

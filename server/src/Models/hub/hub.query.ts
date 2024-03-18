@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 
-import { IHub } from '../../Interfaces/IHub';
+import { IHub } from '../../interfaces/IHub';
 
 import Hub from './hub.model';
 

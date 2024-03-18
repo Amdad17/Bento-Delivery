@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-import { IRiderDailyRecords } from '../../Interfaces/IRiderDailyRecords';
+import { IRiderDailyRecords } from '../../interfaces/IRiderDailyRecords';
 
 const { Schema } = mongoose;
 

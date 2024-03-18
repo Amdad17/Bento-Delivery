@@ -5,9 +5,9 @@ import jwt from 'jsonwebtoken';
 //eslint-disable-next-line
 import { io } from '..';
 import config from '../config';
-import { ILogin } from '../Interfaces/ILogin';
-import { IRider } from '../Interfaces/IRider';
-import { IRiderSignup } from '../Interfaces/IRiderSignup';
+import { ILogin } from '../interfaces/ILogin';
+import { IRider } from '../interfaces/IRider';
+import { IRiderSignup } from '../interfaces/IRiderSignup';
 import {
   findRiderByEmail,
   registerNewRiderInDB,
@@ -17,8 +17,10 @@ import {
   getRiderById,
   getAllRiders,
   completeRiderTask,
-} from '../Models/rider/rider.query';
-import { deleteRiderDailyRecords } from '../Models/riderDailyRecords/riderDailyRecords.query';
+  makeAllRidersOffline,
+  makeAllRidersOnline,
+} from '../models/rider/rider.query';
+import { deleteRiderDailyRecords } from '../models/riderDailyRecords/riderDailyRecords.query';
 
 export async function riderSignup(req: Request, res: Response) {
   try {
@@ -127,6 +129,26 @@ export async function markRiderTaskAsDone(req: Request, res: Response) {
     const riderId = req.params.id;
     const rider = await completeRiderTask(riderId);
     res.status(200).json({ rider });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: (error as Error).message });
+  }
+}
+
+export async function makeAllRidersOfflineController(req: Request, res: Response) {
+  try {
+    const result = await makeAllRidersOffline();
+    res.status(200).json({ result });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: (error as Error).message });
+  }
+}
+
+export async function makeAllRidersOnlineController(req: Request, res: Response) {
+  try {
+    const result = await makeAllRidersOnline();
+    res.status(200).json({ result });
   } catch (error) {
     console.log(error);
     res.status(500).send({ message: (error as Error).message });

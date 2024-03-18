@@ -1,20 +1,19 @@
 import { Types } from 'mongoose';
 
-// MAIN IN THE FILE
 export interface IOrder {
-  _id?: string; // good to go
-  riderId: Types.ObjectId; // need to be added
-  userId: string; // good to go
-  restaurantId: number; // good to go
-  items: IItem[]; // good to go
-  orderTemperatureType: string; // Enum[Hot, Cold]  // need to be added
+  _id?: string;
+  riderId: Types.ObjectId;
+  userId: string;
+  restaurantId: number;
+  items: IItem[];
+  orderTemperatureType: string; // Enum[Hot, Cold]
   orderDeliveryTime: {
     minTime: Date;
     maxTime: Date;
-  }; // need to be modified added
-  deliveryFee: number; // good to go
-  subtotal: number; // good to go
-  createdAt: Date; // good to go
+  };
+  deliveryFee: number;
+  subtotal: number;
+  createdAt: Date;
 }
 
 export interface IOption {

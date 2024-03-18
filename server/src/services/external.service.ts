@@ -1,31 +1,11 @@
 import fs from 'fs';
 import { promisify } from 'util';
 
-import axios from 'axios';
+import { IOrderHistory } from '../interfaces/IOrderHistory';
 
-import config from '../config';
-// import { IRider } from '../Interfaces/IRider';
-import { IUtilizationData } from '../Interfaces/IUtilizationData';
-import { IOrderHistory } from '../Interfaces/orderHistory';
-
-// const utilDataFilePath = 'src/jsons/utils-data.json';
-// const kdsUtilDataFilePath = 'src/jsons/kds-utils-data.json';
 const orderDataFilePath = 'src/jsons/order-history-data.json';
-// const riderDataFilePath = 'src/jsons/riders-data.json';
-// const singleRiderDataFilePath = 'src/jsons/one-rider-data.json';
-const readFileAsync = promisify(fs.readFile);
 
-export async function getAllUtilizationDatas() {
-  try {
-    const res = await axios.get(
-      config.SKELETON_BE_BASE_URL + '/utilization/current/all/?delivery=true',
-    );
-    // eslint-disable-next-line
-    return res.data.data as IUtilizationData[];
-  } catch (error) {
-    throw new Error('Error getting utilization datas from Skeleton.');
-  }
-}
+const readFileAsync = promisify(fs.readFile);
 
 export async function getAllOrderHistoryForLastOneMonthFromMarketplace() {
   try {

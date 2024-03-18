@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
-import { IRiderDailyRecords } from '../Interfaces/IRiderDailyRecords';
+import { IRiderDailyRecords } from '../interfaces/IRiderDailyRecords';
 import {
   getAllRidersDailyRecords,
   getRiderDailyRecordsByRiderId,
   updateRiderDailyRecords,
   createRiderDailyRecords,
-} from '../Models/riderDailyRecords/riderDailyRecords.query';
+} from '../models/riderDailyRecords/riderDailyRecords.query';
 
 export async function findAllRidersDailyRecords(req: Request, res: Response) {
   try {

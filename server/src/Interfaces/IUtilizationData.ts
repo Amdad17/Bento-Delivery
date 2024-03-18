@@ -1,11 +1,3 @@
-// import { IRestaurantUtilizationData } from './IRestaurantUtilizationData';
-
-// export interface IUtilizationData extends IRestaurantUtilizationData {
-//   utilizationType: string;
-//   coordinates: number[];
-//   totalOrders?: number;
-// }
-
 export interface IUtilizationData {
   _id: string;
   restaurantId: number;

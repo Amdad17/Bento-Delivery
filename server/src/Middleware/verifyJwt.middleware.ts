@@ -2,7 +2,7 @@ import { NextFunction, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
 import config from '../config';
-import { IJwtRequest } from '../Interfaces/IJwtRequest';
+import { IJwtRequest } from '../interfaces/IJwtRequest';
 
 export function verifyJwtMiddleware(req: IJwtRequest, res: Response, next: NextFunction) {
   const authHeaders = req.headers.authorization;

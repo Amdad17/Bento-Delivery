@@ -1,15 +1,12 @@
 import mongoose from 'mongoose';
 
-import { IOrder } from '../../Interfaces/IOrder';
-import { IRider } from '../../Interfaces/IRider';
+import { IOrder } from '../../interfaces/IOrder';
+import { IRider } from '../../interfaces/IRider';
 import {
   getSequenceForOneOrders,
   getSequenceForTwoOrders,
 } from '../../services/external-mapbox.service';
-import {
-  getCustomerInfoFromMarketPlace,
-  // updateOrderInfoInMarketPlace,
-} from '../../services/external-marketplace.service';
+import { getCustomerInfoFromMarketPlace } from '../../services/external-marketplace.service';
 import { getRestaurantShortInfo } from '../../services/external-skeleton.service';
 import { searchRiderForOrder } from '../../utils/riderUtils';
 import { getRiderById, updateRider } from '../rider/rider.query';
@@ -20,7 +17,6 @@ export const getAllOrders = async () => {
   try {
     return await Order.find();
   } catch (error) {
-    console.log('Error getting all orders', error);
     console.error('Error getting all orders', error);
   }
 };
@@ -29,7 +25,6 @@ export const getOrderById = async (id: string) => {
   try {
     return await Order.findById(id);
   } catch (error) {
-    console.log('Error getting order by id', error);
     console.error('Error getting order by id', error);
   }
 };
@@ -38,7 +33,6 @@ export const updateOrder = async (id: string, order: IOrder) => {
   try {
     return await Order.findByIdAndUpdate(id, order, { new: true });
   } catch (error) {
-    console.log('Error updating order by id', error);
     console.error('Error updating order by id', error);
   }
 };
@@ -47,7 +41,6 @@ export const deleteOrder = async (id: string) => {
   try {
     return await Order.findByIdAndDelete(id);
   } catch (error) {
-    console.log('Error deleting order by id', error);
     console.error('Error deleting order by id', error);
   }
 };
@@ -57,7 +50,6 @@ export const createOrder = async (order: IOrder) => {
     const newOrder = await Order.create(order);
     return newOrder;
   } catch (error) {
-    console.log('Error creating order', error);
     console.error('Error creating order', error);
   }
 };
@@ -104,7 +96,6 @@ export const getOrderForecastFromToFrequencyMinutes = async (
 
     return result.length > 0 ? (result[0] as { count: number }).count : 0;
   } catch (error) {
-    console.log('Error getting order forecast', error);
     console.error('Error getting order forecast', error);
   }
 };
@@ -142,7 +133,6 @@ export const getAverageNumberOfOrdersOnCurrentDay = async (riderId: string) => {
 
     return result.length > 0 ? (result[0] as { average: number }).average : 0;
   } catch (error) {
-    console.log('Error getting average number of orders on current day', error);
     console.error('Error getting average number of orders on current day', error);
   }
 };
@@ -173,7 +163,6 @@ export const getTotalNumberOfOrdersOfToday = async (riderId: string) => {
     console.log(result);
     return result.length > 0 ? (result[0] as { totalOrders: number }).totalOrders : 0;
   } catch (error) {
-    console.log('Error getting total number of orders of today', error);
     console.error('Error getting all number of orders', error);
   }
 };
@@ -213,9 +202,6 @@ export const assignRiderToOrder = async (order: IOrder) => {
     }
 
     newOrder.riderId = new mongoose.Types.ObjectId(findRiderForOrder._id);
-    // const updatedOrder = calculateDeliveryTime(newOrder);
-    // newOrder.orderDeliveryTime.maxTime = updatedOrder.orderDeliveryTime.maxTime;
-    // newOrder.orderDeliveryTime.minTime = updatedOrder.orderDeliveryTime.minTime;
 
     findRiderForOrder.currentOrderList.push(newOrder);
     findRiderForOrder.travelTime = -1;
@@ -244,12 +230,8 @@ export const assignRiderToOrder = async (order: IOrder) => {
       }
     }
 
-    // const updatedMessage = await updateOrderInfoInMarketPlace(newOrder);
-    // console.log('updatedMessage', updatedMessage);
-
     return newOrder;
   } catch (error) {
-    console.log('Error assigning rider to order', error);
     console.error('Error assigning rider to order', error);
   }
 };

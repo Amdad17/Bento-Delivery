@@ -10,7 +10,7 @@ import {
   getOrderForecast,
   getTotalOrdersOfToday,
   getOrderDetailsFromMarketPlace,
-} from '../Controllers/order.controller';
+} from '../controllers/order.controller';
 
 const orderRouter = express.Router();
 

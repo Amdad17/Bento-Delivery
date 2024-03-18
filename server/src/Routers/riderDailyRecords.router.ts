@@ -5,7 +5,7 @@ import {
   findRiderDailyRecordsByRiderId,
   updateRiderDailyRecordsController,
   createRiderDailyRecordsController,
-} from '../Controllers/riderDailyRecords.controller';
+} from '../controllers/riderDailyRecords.controller';
 const router = express.Router();
 
 router.get('/all', findAllRidersDailyRecords);

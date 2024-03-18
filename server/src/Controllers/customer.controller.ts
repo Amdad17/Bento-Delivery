@@ -3,8 +3,8 @@ import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
 import config from '../config';
-import { ICustomer, ICustomerSignup } from '../Interfaces/ICustomer';
-import { ILogin } from '../Interfaces/ILogin';
+import { ICustomer, ICustomerSignup } from '../interfaces/ICustomer';
+import { ILogin } from '../interfaces/ILogin';
 import {
   registerNewCustomer,
   findCustomerByEmail,
@@ -12,7 +12,7 @@ import {
   getCustomerById,
   updateCustomer,
   deleteCustomer,
-} from '../Models/customer/customer.query';
+} from '../models/customer/customer.query';
 
 export async function customerSignup(req: Request, res: Response) {
   try {
