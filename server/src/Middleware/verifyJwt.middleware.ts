@@ -1,6 +1,6 @@
 import { NextFunction, Response } from 'express';
 import jwt from 'jsonwebtoken';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 import config from '../config';
 import { IJwtRequest } from '../interfaces/IJwtRequest';
