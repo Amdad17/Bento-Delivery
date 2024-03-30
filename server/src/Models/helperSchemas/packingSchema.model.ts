@@ -1,7 +1,6 @@
 import { Schema } from 'mongoose';
 
 import { IPacking } from '../../interfaces/IOrder';
-// import { IRider } from '../../Interfaces/IRider';
 
 export const packingSchema: Schema<IPacking> = new Schema({
   id: { type: Number, required: true },
