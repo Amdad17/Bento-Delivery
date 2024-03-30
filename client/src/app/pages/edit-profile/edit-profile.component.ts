@@ -84,7 +84,7 @@ export class EditProfileComponent implements OnInit {
       if (file) {
         this.cloudinaryServices
           .cloudUpload(file, 'user123')
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+         
           .subscribe((res: any) => {
             this.signUpForm.get('riderImage')?.setValue(res.secure_url);
           });
