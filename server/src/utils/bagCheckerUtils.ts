@@ -1,6 +1,6 @@
 import { IItem, IOrder } from '../interfaces/IOrder';
 import { IRider, IRiderOutput } from '../interfaces/IRider';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 export const bagCapacityCheckerController = (riders: IRider[], order: IOrder) => {
   try {
