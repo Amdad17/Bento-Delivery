@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 import config from '../config';
 import { ICustomer, ICustomerSignup } from '../interfaces/ICustomer';
