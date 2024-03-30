@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 import { io } from '..';
 import { IOrder } from '../interfaces/IOrder';
