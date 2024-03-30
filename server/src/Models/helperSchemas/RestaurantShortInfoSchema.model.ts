@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 export const RestaurantShortInfoSchema = new Schema(
   {
