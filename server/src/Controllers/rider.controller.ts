@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 //eslint-disable-next-line
 import { io } from '..';
