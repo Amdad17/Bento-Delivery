@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 import { IOrder } from '../../interfaces/IOrder';
 import { itemSchema } from '../helperSchemas/itemSchema.model';
