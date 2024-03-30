@@ -3,7 +3,7 @@ import { Schema, model } from 'mongoose';
 import { ICustomer } from '../../interfaces/ICustomer';
 import { CustomerPreferenceSchema } from '../helperSchemas/customerPreference.model';
 import { LongLatSchema } from '../longLat/longLat.model';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 const defaultCustomerPreferenceSchema = {
   tastyTags: {},

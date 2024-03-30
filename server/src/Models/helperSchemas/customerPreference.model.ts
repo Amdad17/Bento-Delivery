@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 
 import { ICustomerPreference } from '../../interfaces/ICustomer';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 export const TastyTagsSchema = new Schema(
   {
