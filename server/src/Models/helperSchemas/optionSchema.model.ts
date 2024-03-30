@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 
 import { IOption } from '../../interfaces/IOrder';
-// import { IRider } from '../../Interfaces/IRider';
+
 
 export const optionSchema: Schema<IOption> = new Schema({
   id: { type: Number, required: true },
