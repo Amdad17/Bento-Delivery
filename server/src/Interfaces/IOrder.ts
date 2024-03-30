@@ -6,7 +6,7 @@ export interface IOrder {
   userId: string;
   restaurantId: number;
   items: IItem[];
-  orderTemperatureType: string; // Enum[Hot, Cold]
+  orderTemperatureType: string; 
   orderDeliveryTime: {
     minTime: Date;
     maxTime: Date;
