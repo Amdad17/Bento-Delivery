@@ -1,4 +1,5 @@
 import amqp, { Channel, Connection } from 'amqplib';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { io } from '..';
 import { IOrder } from '../interfaces/IOrder';

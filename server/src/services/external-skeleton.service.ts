@@ -1,4 +1,5 @@
 import axios from 'axios';
+// import { IRider } from '../../Interfaces/IRider';
 
 //eslint-disable-next-line
 import { IRestaurant, IRestaurantShortInfo } from '../interfaces/IRestaurant';

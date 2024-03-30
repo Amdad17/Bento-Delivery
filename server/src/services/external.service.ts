@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { promisify } from 'util';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { IOrderHistory } from '../interfaces/IOrderHistory';
 

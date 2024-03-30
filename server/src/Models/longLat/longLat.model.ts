@@ -1,4 +1,5 @@
 import { Schema } from 'mongoose';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { ILongLat } from '../../interfaces/ILongLat';
 

@@ -1,4 +1,5 @@
 import { Schema, model } from 'mongoose';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { IRider } from '../../interfaces/IRider';
 import { CustomerSchema } from '../customer/customer.model';

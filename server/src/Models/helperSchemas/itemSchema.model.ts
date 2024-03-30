@@ -3,6 +3,7 @@ import { Schema } from 'mongoose';
 import { IItem } from '../../interfaces/IOrder';
 
 import { packingSchema } from './packingSchema.model';
+// import { IRider } from '../../Interfaces/IRider';
 
 export const itemSchema: Schema<IItem> = new Schema({
   _id: { type: String },

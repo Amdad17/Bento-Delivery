@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { IRiderDailyRecords } from '../../interfaces/IRiderDailyRecords';
 

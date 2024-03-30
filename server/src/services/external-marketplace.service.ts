@@ -1,4 +1,5 @@
 import axios from 'axios';
+// import { IRider } from '../../Interfaces/IRider';
 
 import { ICustomer } from '../interfaces/ICustomer';
 import { IOrder } from '../interfaces/IOrder';

@@ -1,4 +1,5 @@
 import express from 'express';
+// import { IRider } from '../../Interfaces/IRider';
 
 import {
   riderLogin,
