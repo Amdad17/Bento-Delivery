@@ -1,4 +1,4 @@
-// import { IRider } from '../../Interfaces/IRider';
+
 export const formatDateToString = (date: Date): string => {
   return new Date(date).toLocaleString('en-US', {
     dateStyle: 'medium',
